@@ -7,14 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="0_idea" />
+        <module name="0_1remote-debug" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="0_idea" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="0_1remote-debug" options="-parameters" />
       <module name="0_idea" options="-parameters" />
     </option>
   </component>
