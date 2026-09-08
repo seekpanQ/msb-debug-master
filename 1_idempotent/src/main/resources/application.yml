@@ -1,0 +1,36 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8081
+spring:
+  # 集群配置
+  redis:
+    timeout: 5000
+    database: 0
+    host: 192.168.91.128
+    port: 6379
+  # DataSource Config
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.91.128:3306/db_debug?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+#mybatis 插件
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.mashibing.debug.idempotent.moduler.*.entity
+  global-config:
+    db-config:
+      #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
+      #      id-type: uuid
+      id-type: auto
+      #逻辑删除配置：is_delete
+      logic-delete-field: isDelete
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
