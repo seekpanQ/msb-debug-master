@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="0_idea" />
         <module name="0_1remote-debug" />
+        <module name="2_cpu" />
         <module name="1_idempotent" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="0_1remote-debug" options="-parameters" />
       <module name="0_idea" options="-parameters" />
       <module name="1_idempotent" options="-parameters" />
+      <module name="2_cpu" options="-parameters" />
     </option>
   </component>
 </project>

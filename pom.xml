@@ -7,7 +7,7 @@
         <module>0_idea</module>
         <module>0_1remote-debug</module>
         <module>1_idempotent</module>
-        <!--        <module>2_cpu</module>-->
+        <module>2_cpu</module>
         <!--        <module>3_memory</module>-->
         <!--        <module>4_snowflake</module>-->
         <!--        <module>5_double</module>-->
