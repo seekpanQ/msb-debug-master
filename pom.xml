@@ -10,7 +10,7 @@
         <module>2_cpu</module>
         <module>3_memory</module>
         <module>4_snowflake</module>
-        <!--        <module>5_double</module>-->
+        <module>5_double</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
